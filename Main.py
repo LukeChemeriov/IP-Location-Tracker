@@ -9,7 +9,7 @@ import requests
 def my_ip_location(my_ip):
     reader = geolite2.reader()
     location = reader.get(my_ip)
-
+    print("Searching.....")
     # geolite database dict values and fine tunning
     a=(location['city']['names']['en'])
     b=(location['continent']['names']['en'])
